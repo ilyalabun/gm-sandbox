@@ -1,0 +1,8 @@
+<ng-template #infowindowtmpl let-lat="lat" let-lng="lng">
+  <div class="infowindow">
+    <p>Location {{lat}} {{lng}}</p>
+    <button class="hide_map">Hide map</button>
+  </div>
+</ng-template>
+
+<div id="map" [hidden]="mapHidden" #gmap></div>
